@@ -164,6 +164,18 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/index.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -183,28 +195,60 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/Content\/body.kit" : {
+    "\/dev\/Content\/articles5cardsection.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/Content\/body.html",
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/articles5cardsection.html",
+      "oF" : 0
+    },
+    "\/dev\/Content\/bodycard.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/bodycard.html",
+      "oF" : 0
+    },
+    "\/dev\/Content\/bodycards2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/bodycards2.html",
       "oF" : 0
     },
     "\/dev\/Content\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/Content\/footer.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/head.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/head.html",
       "oF" : 0
     },
     "\/dev\/Content\/header.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/Content\/header.html",
+      "oF" : 0
+    },
+    "\/dev\/Content\/Imagesunder2bodycards.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/Imagesunder2bodycards.html",
       "oF" : 0
     },
     "\/dev\/index.kit" : {
@@ -398,7 +442,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_body.scss" : {
+    "\/dev\/scss\/sections\/_bodycard.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -407,7 +451,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_body.css",
+      "oAP" : "\/dev\/scss\/sections\/_bodycard.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -443,6 +487,51 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/articles5cardsection.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/scss\/sections\/articles5cardsection.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/bodycards2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/scss\/sections\/bodycards2.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/imagesunder2bodycards.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/scss\/sections\/imagesunder2bodycards.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -452,8 +541,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 3,
+      "oAP" : "\/deploy\/index.css",
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
