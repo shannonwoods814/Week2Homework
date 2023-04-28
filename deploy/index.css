@@ -409,3 +409,9 @@ textarea {
   grid-template-columns: 1fr;
   background-color: #594854;
 }
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #A86A96;
+}
