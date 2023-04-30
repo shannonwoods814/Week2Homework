@@ -80,7 +80,6 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted; /* 2 */
 }
 
@@ -319,6 +318,10 @@ template {
 /* =============
     Base
 ============= */
+img {
+  width: 100%;
+}
+
 figure {
   padding: 0;
   margin: 0;
@@ -399,13 +402,7 @@ textarea {
 /* =============
     Navigation
 ============= */
-/* =============
-    Header
-============= */
-/* =============
-    Footer
-============= */
-#header {
+#footer {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #594854;
@@ -415,4 +412,53 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #A86A96;
+}
+
+#bodycard {
+  display: grid;
+}
+#bodycard .bodycards1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #FFACAC;
+  grid-template-areas: "left" "right";
+}
+#bodycard .bodycards1 section {
+  background-color: #FF8585;
+}
+#bodycard .bodycards1 div {
+  Background-color: #FFACAC;
+}
+@media (min-width: 768px) {
+  #bodycard .bodycards1 {
+    grid-template-columns: 20% 80%;
+  }
+}
+@media (min-width: 992px) {
+  #bodycard .bodycards1 {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (min-width: 1200px) {
+  #bodycard .bodycards1 {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+#bodycards2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #FFDADA;
+}
+
+#articles5cardsection {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #F8F8F8;
+}
+
+#imagesunder2bodycards {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #AEC9CE;
 }

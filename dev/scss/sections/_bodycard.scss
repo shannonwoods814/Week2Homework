@@ -2,25 +2,39 @@
 
     display: grid;
 
-    grid-template-columns:1fr;
+    .bodycards1{
+        display:grid;
 
-    background-color:#FFACAC;
-    
-    grid-template-areas: ".section" ".div";
+        grid-template-columns:1fr;
 
-    section{
-
-        background-color: #FF8585;
-
-    }
-
-    div{
-
-        Background-color:  #FFACAC;
+        background-color:#FFACAC;
         
+        grid-template-areas: "left" "right";
+    
+        section{
+    
+            background-color: #FF8585;
+    
+        }
+    
+        div{
+    
+            Background-color:  #FFACAC;
+    
+        }
+    @include md{
+        grid-template-columns:20% 80%;
+    }
+    @include lg{
+        grid-template-columns: 50% 50%;
     }
 
+    @include xl{
+        grid-template-columns: 50% 50%;
+    }
     }
 
+  
 
+}
 
