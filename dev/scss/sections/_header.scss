@@ -6,8 +6,20 @@
 
     background-color:#A86A96;
 
+    .container{
+        width:200px;
+        height: 120px;
+
     }
 
-    
+    /*resize images*/
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    }
+
+
 
 

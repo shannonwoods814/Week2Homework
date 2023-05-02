@@ -4,6 +4,29 @@
 
     grid-template-columns:1fr;
 
-    background-color:#FFDADA;
+    background-color:#A86A96;
 
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        background-color:#A86A96;
+        
+        grid-template-areas: "left" "right";
+    
+        aside#left{
+    
+            background-color: #A86A96;
+    
+        }
+    
+        div#right{
+    
+            background-color:  #A86A96;
+    
+       
+        }
+        @include lg {
+            grid-template-columns: 50% 50%;
+    }
     }
