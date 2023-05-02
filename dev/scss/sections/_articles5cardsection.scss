@@ -1,0 +1,40 @@
+#articles5cardsection{
+
+    display: grid;
+
+    grid-template-columns:1fr;
+
+    background-color:#F8F8F8;
+
+    margin: 0px 16px
+
+    ul{
+        margin:0;
+        padding:0;
+        display: grid;
+        grid-gap: 8px;
+
+        li :
+            background-color:#F8F8F8;
+            width: 100%;
+            grid-template-columns: 1fr;
+
+        }
+    }
+@include md{
+
+    margin: 0 40px;
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8px;
+    }
+}
+@include lg{
+    margin: 0 40px;
+    ul{
+        grid-template-columns: : repeat(5,1fr);
+    }
+}
+    }
+

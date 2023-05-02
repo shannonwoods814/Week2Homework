@@ -1,6 +1,5 @@
-#bodycard{
 
-    display: grid;
+
 
     .bodycards1{
         display:grid;
@@ -11,30 +10,28 @@
         
         grid-template-areas: "left" "right";
     
-        section{
+        aside#left{
     
             background-color: #FF8585;
     
         }
     
-        div{
+        div#right{
     
             Background-color:  #FFACAC;
     
         }
-    @include md{
-        grid-template-columns:20% 80%;
-    }
-    @include lg{
-        grid-template-columns: 50% 50%;
-    }
+  
+        @include md {
+            grid-template-columns:20% 80%;
+         
+        }
+        @include lg {
+            grid-template-columns: 50% 50%;
+        }
 
-    @include xl{
-        grid-template-columns: 50% 50%;
-    }
+   
     }
 
   
-
-}
 
