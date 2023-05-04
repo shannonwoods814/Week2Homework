@@ -322,6 +322,10 @@ img {
   width: 100%;
 }
 
+* {
+  border: 0.5px solid red;
+}
+
 figure {
   padding: 0;
   margin: 0;
@@ -347,6 +351,15 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.buttoncolor {
+  background-color: #FF8585;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #f8f8f8;
 }
 
 /* =============
@@ -406,21 +419,37 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #594854;
-}
-
-#header {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-areas: "div" "aside" "article";
+  color: #f8f8f8;
+  background: #594854;
+}
+@media (min-width: 768px) {
+  #footer {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #F8f8f8;
+}
+header div#search {
+  background-color: #F8f8f8;
+}
+
+.container {
+  width: auto;
+  height: 68px;
   background-color: #A86A96;
-  /*resize images*/
 }
-#header .container {
-  width: 200px;
-  height: 120px;
-}
-#header .container img {
-  width: 100%;
+.container img {
+  width: auto;
   height: auto;
+  margin-top: 18px;
+  margin-left: 8px;
 }
 
 .bodycards1 {
@@ -428,6 +457,12 @@ textarea {
   grid-template-columns: 1fr;
   background-color: #FFACAC;
   grid-template-areas: "left" "right";
+}
+.bodycards1 h2 {
+  color: #F8F8F8;
+}
+.bodycards1 h4 {
+  color: #F8F8F8;
 }
 .bodycards1 aside#left {
   background-color: #FF8585;
@@ -437,7 +472,7 @@ textarea {
 }
 @media (min-width: 768px) {
   .bodycards1 {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 30% 70%;
   }
 }
 @media (min-width: 992px) {
@@ -449,17 +484,43 @@ textarea {
 #bodycards2 {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #A86A96;
+  background-color: #F8F8F8;
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #A86A96;
+  grid-gap: 16px;
   grid-template-areas: "left" "right";
+}
+#bodycards2 h1 {
+  color: #F8F8F8;
+}
+#bodycards2 h3 {
+  color: #F8F8F8;
 }
 #bodycards2 aside#left {
   background-color: #A86A96;
+  height: 161px;
+  width: auto;
+}
+#bodycards2 aside#left img {
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+  float: right;
+  justify-content: center;
+  margin-right: 16px;
 }
 #bodycards2 div#right {
   background-color: #A86A96;
+  height: 161px;
+  width: auto;
+}
+#bodycards2 div#right img {
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+  float: right;
+  justify-content: center;
+  margin-right: 16px;
 }
 @media (min-width: 992px) {
   #bodycards2 {
@@ -467,44 +528,68 @@ textarea {
   }
 }
 
-.articles5cardsection {
+#articles5cardsection {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #F8F8F8;
   margin: 0px 16px;
+  color: #F8F8F8;
 }
-.articles5cardsection ul {
+#articles5cardsection ul {
   margin: 0;
   padding: 0;
   display: grid;
   grid-gap: 8px;
 }
-.articles5cardsection ul li {
-  background-color: #F8F8F8;
+#articles5cardsection ul li {
+  background-color: #A86A96;
   width: 100%;
   grid-template-columns: 1fr;
 }
 @media (min-width: 768px) {
-  .articles5cardsection {
+  #articles5cardsection {
     margin: 0 40px;
   }
-  .articles5cardsection ul {
+  #articles5cardsection ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
   }
 }
 @media (min-width: 992px) {
-  .articles5cardsection {
+  #articles5cardsection {
     margin: 0 40px;
   }
-  .articles5cardsection ul {
-    grid-template-columns: repeat(5, 1fr);
+  #articles5cardsection ul {
+    grid-template-columns: repeat(1fr 1fr 1fr);
   }
 }
 
-#imagesunder2bodycards {
+#Imagesunder2bodycards {
   display: grid;
-  grid-template-columns: 1fr;
-  background-color: #AEC9CE;
+}
+#Imagesunder2bodycards .gallery-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "aside" "div" "article";
+}
+@media (min-width: 576px) {
+  #Imagesunder2bodycards .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  #Imagesunder2bodycards .gallery-grid {
+    grid-template-columns: 50% 50% 0%;
+  }
+}
+@media (min-width: 992px) {
+  #Imagesunder2bodycards .gallery-grid {
+    grid-template-columns: 60% 40% 0%;
+  }
+}
+@media (min-width: 1200px) {
+  #Imagesunder2bodycards .gallery-grid {
+    grid-template-columns: 70% auto auto;
+  }
 }

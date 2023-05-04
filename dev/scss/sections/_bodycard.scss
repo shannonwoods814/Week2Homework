@@ -7,12 +7,17 @@
         grid-template-columns:1fr;
 
         background-color:#FFACAC;
+
+        h2 {color: #F8F8F8};
+        h4 {color: #F8F8F8};
         
         grid-template-areas: "left" "right";
     
         aside#left{
     
             background-color: #FF8585;
+
+            
     
         }
     
@@ -23,7 +28,7 @@
         }
   
         @include md {
-            grid-template-columns:20% 80%;
+            grid-template-columns:30% 70%;
          
         }
         @include lg {

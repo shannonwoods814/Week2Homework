@@ -4,29 +4,56 @@
 
     grid-template-columns:1fr;
 
-    background-color:#A86A96;
+    background-color:#F8F8F8;
 
         display:grid;
 
         grid-template-columns:1fr;
+        grid-gap: 16px;
 
-        background-color:#A86A96;
-        
+        h1 {color:#F8F8F8};
+        h3 {color:#F8F8F8};
+
         grid-template-areas: "left" "right";
     
         aside#left{
     
             background-color: #A86A96;
+            height: 161px;
+            width: auto; 
+            
+            img{
+                width: 113px;
+                height: 113px;
+                border-radius: 50%;
+                float: right;
+                justify-content: center;
+                margin-right: 16px;
+            }
     
         }
     
         div#right{
     
             background-color:  #A86A96;
+            height: 161px;
+            width: auto; 
+            img{
+                width: 113\px;
+                height: 113px;
+                border-radius: 50%;
+                float: right;
+                justify-content: center;
+                margin-right: 16px;
+                
+    
+                
+            }
     
        
         }
         @include lg {
             grid-template-columns: 50% 50%;
     }
+    
     }

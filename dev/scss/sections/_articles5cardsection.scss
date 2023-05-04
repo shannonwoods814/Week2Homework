@@ -1,20 +1,21 @@
-.articles5cardsection{
-    display:grid;
+#articles5cardsection{
+    display: grid;
 
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
 
     background-color:#F8F8F8;
 
     margin: 0px 16px;
+    color: #F8F8F8;
 
     ul{
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         display: grid;
         grid-gap: 8px;
 
         li{
-            background-color:#F8F8F8;
+            background-color:#A86A96;
             width: 100%;
             grid-template-columns: 1fr;
 
@@ -32,7 +33,7 @@
 @include lg{
     margin: 0 40px;
     ul{
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(1fr 1fr 1fr);
     }
 }
     }

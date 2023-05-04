@@ -6,4 +6,15 @@
 
     background-color:#594854;
 
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "div" "aside" 'article';
+    color: #f8f8f8;
+    background:#594854;
+
+
+    @include md{
+        grid-template-columns:auto auto auto;
     }
+}
