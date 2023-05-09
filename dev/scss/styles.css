@@ -618,3 +618,6 @@ button {
     grid-template-columns: 70% auto auto;
   }
 }
+#Imagesunder2bodycards aside img {
+  width: 40;
+}
