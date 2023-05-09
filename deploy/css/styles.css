@@ -434,22 +434,47 @@ textarea {
 header {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #F8f8f8;
-}
-header div#search {
-  background-color: #F8f8f8;
-}
-
-.container {
-  width: auto;
-  height: 68px;
   background-color: #A86A96;
 }
-.container img {
+header nav {
+  background-color: #F8f8f8;
+  padding: 24px;
+  display: flex;
+}
+header nav #search {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #F8f8f8;
+}
+header nav #search button {
+  background-color: #457592;
+  border: none;
+}
+header nav #search button img {
+  width: 40px;
+}
+header nav input {
+  border: none;
+}
+header .container {
+  width: auto;
+  height: 68px;
+}
+header .container img {
   width: auto;
   height: auto;
   margin-top: 18px;
   margin-left: 8px;
+}
+
+button {
+  background-color: #FFACAC;
+  border-radius: 3.5px;
+  border: none;
+  padding: 6px 11px;
 }
 
 .bodycards1 {
@@ -592,4 +617,7 @@ header div#search {
   #Imagesunder2bodycards .gallery-grid {
     grid-template-columns: 70% auto auto;
   }
+}
+#Imagesunder2bodycards aside img {
+  width: 40;
 }
