@@ -1,0 +1,42 @@
+
+
+
+    .bodycards1{
+        display:grid;
+
+        grid-template-columns:1fr;
+
+        background-color:#FFACAC;
+
+        h2 {color: #F8F8F8};
+        h4 {color: #F8F8F8};
+        
+        grid-template-areas: "left" "right";
+    
+        aside#left{
+    
+            background-color: #FF8585;
+
+            
+    
+        }
+    
+        div#right{
+    
+            Background-color:  #FFACAC;
+    
+        }
+  
+        @include md {
+            grid-template-columns:30% 70%;
+         
+        }
+        @include lg {
+            grid-template-columns: 50% 50%;
+        }
+
+   
+    }
+
+  
+
