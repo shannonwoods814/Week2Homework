@@ -21,6 +21,8 @@
             background-color: #A86A96;
             height: 161px;
             width: auto; 
+            margin-top: 20px;
+            padding: 15px;
             
             img{
                 width: 113px;
@@ -29,7 +31,11 @@
                 float: right;
                 justify-content: center;
                 margin-right: 16px;
+                border: 5px solid #F8F8F8;
+            
             }
+
+           
     
         }
     
@@ -38,17 +44,24 @@
             background-color:  #A86A96;
             height: 161px;
             width: auto; 
+            margin-top: 20px;
+            padding: 15px;
+            
             img{
                 width: 113\px;
                 height: 113px;
+                border: 5px solid #F8F8F8;
                 border-radius: 50%;
                 float: right;
                 justify-content: center;
                 margin-right: 16px;
                 
+               
     
                 
             }
+
+           
     
        
         }

@@ -1,84 +1,80 @@
-header{
+header {
 
     display: grid;
     grid-template-columns: 1fr;
-    background-color:#A86A96;
+    background-color: #A86A96;
 
 
-    nav{ 
-        background-color: #F8f8f8;
-        padding:24px;
+    nav {
+        background-color: #A86A96;
+        padding: 24px;
+        display: flex;
+    }
+
+    div#hero {
+        img{
+            width: 100%;
+            height: 100%;
+           
+        }
+    }
+
+
+    section#search {
         display: flex;
 
-        
-        #search{
-            display:flex;
-            width:100%;
-            align-items:stretch;
-            justify-content: space-between;
-            gap: 10px;
-            background-color:#F8f8f8;
-
-            button{
-                background-color:#457592;
-                border: none;
-                img{
-                    width: 40px;
-                }
-            }
-
-            }
-
-                input{
-                    border: none;
-
-                }
-        }
-
-    
-
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: #F8f8f8;
             
+
+        img {
+            width: 30px;
+            height: 30px;
+            background-color: #457592;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 10%;
+            margin-right: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
     
+        }
 
-        .container{
-            width:auto;
-            height:68px;
+        input {
+            border: none;
+            margin: 0;
+            width: 100%;
+            margin-left: 20px;      
         
-
-            img {
-                width: auto;
-                height: auto;
-                margin-top: 18px;
-                margin-left:8px;
-
-                
-                
-            }
+        
         }
 
     }
 
-    button{
-        background-color: #FFACAC;
-        border-radius: 3.5px;
-        border: none;
-        padding:6px 11px;
 
-        
+}
+
+
+
+
+
+
+.container {
+    width: auto;
+    height: 68px;
+
+
+    img {
+        width: auto;
+        height: auto;
+        margin-top: 18px;
+        margin-left: 8px;
+
 
 
     }
-
-
-
-
-
-    
-    
-
-
-    
-
-
-
-
+}

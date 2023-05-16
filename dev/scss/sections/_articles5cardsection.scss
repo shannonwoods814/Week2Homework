@@ -12,12 +12,15 @@
         margin: 0;
         padding: 0;
         display: grid;
-        grid-gap: 8px;
+        grid-gap: 16px;
 
         li{
             background-color:#A86A96;
             width: 100%;
             grid-template-columns: 1fr;
+        
+            
+            
 
         }
     }
@@ -27,7 +30,7 @@
     ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 8px;
+        grid-gap: 16px;
     }
 }
 @include lg{

@@ -14,8 +14,22 @@
         grid-template-areas: "left" "right";
     
         aside#left{
+
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 20px;
     
             background-color: #FF8585;
+
+            img{
+                width:60px;
+                height:25px;
+                display:flex;
+                justify-content:space-between;
+                margin-right: 15px;
+
+            }
 
             
     
@@ -23,7 +37,20 @@
     
         div#right{
     
-            Background-color:  #FFACAC;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            background-color:  #FFACAC;
+            padding: 15px;
+
+            img{
+                width:62px;
+                height:25px;
+                display:flex;
+                justify-content:space-between;
+                margin-right: 15px;
+                
+            }
     
         }
   
