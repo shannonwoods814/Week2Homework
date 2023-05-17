@@ -595,6 +595,10 @@ header section#search input {
   overflow: hidden;
   height: 300px;
 }
+#articles5cardsection .buttoncolor {
+  display: inline-block;
+  margin-bottom: 10px;
+}
 @media (min-width: 768px) {
   #articles5cardsection {
     margin: 0 40px;
