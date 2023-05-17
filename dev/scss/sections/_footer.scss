@@ -17,4 +17,8 @@
     @include md{
         grid-template-columns:auto auto auto;
     }
+
+    @include lg{
+        grid-template-columns: autp autp auto;
+    }
 }

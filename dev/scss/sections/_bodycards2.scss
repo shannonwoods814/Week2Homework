@@ -1,72 +1,59 @@
-#bodycards2{
+#bodycards2 {
 
     display: grid;
 
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
 
-    background-color:#F8F8F8;
+    background-color: #F8F8F8;
 
-        display:grid;
+    display: grid;
 
-        grid-template-columns:1fr;
-        grid-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
 
-        h1 {color:#F8F8F8};
-        h3 {color:#F8F8F8};
+    h1 {
+        color: #F8F8F8;
+    }
 
-        grid-template-areas: "left" "right";
-    
-        aside#left{
-    
-            background-color: #A86A96;
-            height: 161px;
-            width: auto; 
-            margin-top: 20px;
-            padding: 15px;
-            
-            img{
-                width: 113px;
-                height: 113px;
-                border-radius: 50%;
-                float: right;
-                justify-content: center;
-                margin-right: 16px;
-                border: 5px solid #F8F8F8;
-            
-            }
+    h3 {
+        color: #F8F8F8;
+    }
 
-           
-    
+    grid-template-areas: "left" "right";
+
+    aside{
+
+        background-color: #A86A96;
+        width: auto;
+        margin-top: 20px;
+        padding: 15px;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+
+
+        img {
+            max-height: 85px;
+            max-width: 85px;
+        
+
         }
-    
-        div#right{
-    
-            background-color:  #A86A96;
-            height: 161px;
-            width: auto; 
-            margin-top: 20px;
-            padding: 15px;
-            
-            img{
-                width: 113\px;
-                height: 113px;
-                border: 5px solid #F8F8F8;
-                border-radius: 50%;
-                float: right;
-                justify-content: center;
-                margin-right: 16px;
-                
-               
-    
-                
-            }
 
-           
-    
-       
+        .buttoncolor {
+            display: inline-block;
+            margin-top: 10px;
         }
-        @include lg {
-            grid-template-columns: 50% 50%;
+
+
+
+    }
+
+
+
+
+    @include lg {
+        grid-template-columns: 50% 50%;
     }
     
-    }
+
+}

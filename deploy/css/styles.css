@@ -362,7 +362,7 @@ ul li {
     Typography
 ============= */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -371,8 +371,8 @@ h1, h2, h3, h4 {
 }
 
 p {
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 10px;
 }
 
 .section-title {
@@ -424,6 +424,11 @@ textarea {
 @media (min-width: 768px) {
   #footer {
     grid-template-columns: auto auto auto;
+  }
+}
+@media (min-width: 992px) {
+  #footer {
+    grid-template-columns: autp autp auto;
   }
 }
 
@@ -545,37 +550,22 @@ header section#search input {
 #bodycards2 h3 {
   color: #F8F8F8;
 }
-#bodycards2 aside#left {
+#bodycards2 aside {
   background-color: #A86A96;
-  height: 161px;
   width: auto;
   margin-top: 20px;
   padding: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
-#bodycards2 aside#left img {
-  width: 113px;
-  height: 113px;
-  border-radius: 50%;
-  float: right;
-  justify-content: center;
-  margin-right: 16px;
-  border: 5px solid #F8F8F8;
+#bodycards2 aside img {
+  max-height: 85px;
+  max-width: 85px;
 }
-#bodycards2 div#right {
-  background-color: #A86A96;
-  height: 161px;
-  width: auto;
-  margin-top: 20px;
-  padding: 15px;
-}
-#bodycards2 div#right img {
-  width: 113px;
-  height: 113px;
-  border: 5px solid #F8F8F8;
-  border-radius: 50%;
-  float: right;
-  justify-content: center;
-  margin-right: 16px;
+#bodycards2 aside .buttoncolor {
+  display: inline-block;
+  margin-top: 10px;
 }
 @media (min-width: 992px) {
   #bodycards2 {
@@ -600,6 +590,10 @@ header section#search input {
   background-color: #A86A96;
   width: 100%;
   grid-template-columns: 1fr;
+}
+#articles5cardsection figure {
+  overflow: hidden;
+  height: 300px;
 }
 @media (min-width: 768px) {
   #articles5cardsection {

@@ -24,6 +24,10 @@
 
         }
     }
+    figure{
+        overflow:hidden;
+        height:300px;
+    }
 @include md{
 
     margin: 0 40px;
